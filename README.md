@@ -3,3 +3,5 @@ This is the GitHub repository for the CS5824 19Fall course project (Team6). The 
 the paper titled "Physics-Informed Generative Adversarial Networks by Incorporating Conservation Laws" [1], 2) evaluate the 
 findings by running the code and comparing the results we get to the results in Ref [1], 3) get ourselves familiar with the 
 principles of how GANs or specifically physics-informed GANs work.
+
+[1] Zeng, Yang, Jinlong Wu, and Heng Xiao. "Physics-Informed Generative Adversarial Networks by Incorporating Conservation Laws." Bulletin of the American Physical Society 63 (2018)
