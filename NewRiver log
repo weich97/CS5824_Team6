@@ -1,0 +1,44 @@
+Attached are the log history from running a case on NewRiver:
+
+[weich97@nr165 Parallel-PIGANs]$ python Serial_PIGANs_PF_dataset.py 
+/opt/apps/Anaconda/5.1.0/lib/python3.6/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+cons: 0.000 lam: 0.200 lr: 0.002000 ep: 10.000
+2019-12-06 20:18:54.957321: I tensorflow/core/platform/cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2019-12-06 20:18:55.064419: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla P100-PCIE-12GB major: 6 minor: 0 memoryClockRate(GHz): 1.3285
+pciBusID: 0000:82:00.0
+totalMemory: 11.91GiB freeMemory: 11.41GiB
+2019-12-06 20:18:55.202158: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 1 with properties: 
+name: Tesla P100-PCIE-12GB major: 6 minor: 0 memoryClockRate(GHz): 1.3285
+pciBusID: 0000:02:00.0
+totalMemory: 11.91GiB freeMemory: 60.38MiB
+2019-12-06 20:18:55.202268: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 0, 1
+2019-12-06 20:18:56.372754: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-12-06 20:18:56.372831: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      0 1 
+2019-12-06 20:18:56.372875: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 0:   N N 
+2019-12-06 20:18:56.372884: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 1:   N N 
+2019-12-06 20:18:56.373068: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11043 MB memory) -> physical GPU (device: 0, name: Tesla P100-PCIE-12GB, pci bus id: 0000:82:00.0, compute capability: 6.0)
+2019-12-06 20:18:56.479996: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 4 MB memory) -> physical GPU (device: 1, name: Tesla P100-PCIE-12GB, pci bus id: 0000:02:00.0, compute capability: 6.0)
+2019-12-06 20:18:56.481134: E tensorflow/stream_executor/cuda/cuda_driver.cc:936] failed to allocate 4.38M (4587520 bytes) from device: CUDA_ERROR_OUT_OF_MEMORY
+2019-12-06 20:18:56.482063: E tensorflow/stream_executor/cuda/cuda_driver.cc:936] failed to allocate 3.94M (4128768 bytes) from device: CUDA_ERROR_OUT_OF_MEMORY
+2019-12-06 20:18:56.482985: E tensorflow/stream_executor/cuda/cuda_driver.cc:936] failed to allocate 3.54M (3716096 bytes) from device: CUDA_ERROR_OUT_OF_MEMORY
+2019-12-06 20:18:56.483905: E tensorflow/stream_executor/cuda/cuda_driver.cc:936] failed to allocate 3.19M (3344640 bytes) from device: CUDA_ERROR_OUT_OF_MEMORY
+2019-12-06 20:18:56.484823: E tensorflow/stream_executor/cuda/cuda_driver.cc:936] failed to allocate 2.87M (3010304 bytes) from device: CUDA_ERROR_OUT_OF_MEMORY
+2019-12-06 20:18:56.485743: E tensorflow/stream_executor/cuda/cuda_driver.cc:936] failed to allocate 2.58M (2709504 bytes) from device: CUDA_ERROR_OUT_OF_MEMORY
+2019-12-06 20:18:56.486668: E tensorflow/stream_executor/cuda/cuda_driver.cc:936] failed to allocate 2.33M (2438656 bytes) from device: CUDA_ERROR_OUT_OF_MEMORY
+2019-12-06 20:18:56.487590: E tensorflow/stream_executor/cuda/cuda_driver.cc:936] failed to allocate 2.09M (2194944 bytes) from device: CUDA_ERROR_OUT_OF_MEMORY
+training start!
+[1/10] - ptime: 25.95 loss_d: 1.664, loss_g: 5.290, delta: 2366.685
+[2/10] - ptime: 14.11 loss_d: 6.794, loss_g: -4.937, delta: 788.505
+[3/10] - ptime: 14.11 loss_d: 5.110, loss_g: -8.960, delta: 289.284
+[4/10] - ptime: 14.11 loss_d: 0.359, loss_g: -5.346, delta: 159.089
+[5/10] - ptime: 14.11 loss_d: -0.535, loss_g: -4.652, delta: 120.905
+[6/10] - ptime: 14.10 loss_d: 0.691, loss_g: -6.650, delta: 107.547
+[7/10] - ptime: 14.17 loss_d: 1.022, loss_g: -5.287, delta: 109.603
+[8/10] - ptime: 14.09 loss_d: 1.162, loss_g: -5.952, delta: 94.861
+[9/10] - ptime: 14.07 loss_d: 0.971, loss_g: -6.269, delta: 80.437
+[10/10] - ptime: 14.12 loss_d: 0.938, loss_g: -7.739, delta: 75.118
+[11/10] - ptime: 14.11 loss_d: 0.948, loss_g: -8.268, delta: 62.202
+
+Just ignore the warnings.
