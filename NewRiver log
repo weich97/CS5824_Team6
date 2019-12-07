@@ -1,4 +1,5 @@
-Attached are the log history from running a case on NewRiver:
+Attached are the log history from running a case on NewRiver. What is important is that we need to drive the divergence (delta)
+to be as close as 0. The loss function values are not that important, since we are using an physics-informed GANs.
 
 [weich97@nr165 Parallel-PIGANs]$ python Serial_PIGANs_PF_dataset.py 
 /opt/apps/Anaconda/5.1.0/lib/python3.6/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
