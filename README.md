@@ -57,7 +57,7 @@ python Serial_PIGANs_PF_dataset.py
 You may need to read the code first, as this code requires that you prepared the data, created a directory to store the results, e.t.c
 
 # To generate the training data
-Just run using "python write_tfrecord.py". You can change the mesh size, but you should also change the network size and the convolution kernel size and the strides in the "Serial_PIGANs_PF_dataset.py". This file also has a normalization so that the train data can be normalized.
+Just run using "python write_tfrecord.py". You can change the mesh size, but you should also change the network size and the convolution kernel size and the strides in the "Serial_PIGANs_PF_dataset.py" (you do not need to do so for 32x32 to 512x512 grids). This file also has a normalization so that the train data can be normalized.
 
 # Some important notes
 The source code can be found at git@github.com:zengyang7/Parallel-PIGANs.git. The source code may be used but requires citing:
