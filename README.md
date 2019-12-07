@@ -40,9 +40,11 @@ salloc --time=04:00:00 -N 1 -n 8 --gres=gpu:2 --partition=normal_q --account=vt_
 # Step 3
 Then you need to load some modules and activate the Anaconda environment on the nodes you applied. On NewRiver, try
 
+'''
 module load Anaconda/5.1.0
 module load cuda/9.0.176
 module load cudnn/7.1
+'''
 
 If you are using Huckleberry, then try
 
