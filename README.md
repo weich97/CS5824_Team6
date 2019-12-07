@@ -56,4 +56,7 @@ python Serial_PIGANs_PF_dataset.py
 
 You may need to read the code first, as this code requires that you prepared the data, created a directory to store the results, e.t.c
 
+# To generate the training data
+Just run using "python write_tfrecord.py". You can change the mesh size, but you should also change the network size and the convolution kernel size and the strides in the "Serial_PIGANs_PF_dataset.py"
+
 If there is any question, please email weich@vt.edu
