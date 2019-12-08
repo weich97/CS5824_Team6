@@ -12,7 +12,9 @@ principles of how GANs or specifically physics-informed GANs work.
 The paper can be summarized into 4 parts. the first part deals with the introduction and evolution of the GANs models. General GANs are introduced first, following by specific GANs and physcis-informed GANs. The main aim of the paper is to apply the physics-informed GANs model to simulate a simple potential flow (although this paper has a simpler test case to prove the GANs is working properly).
 
 # Background
-Traditional Computational Fluid Dynamics (CFD) methods are commonly computational expensive in solving a system of Partial Differential Equations (PDEs) on well refined meshes, especially for turbulent and high Reynolds number flows. Fortunately, the development of machine learning (ML) or deep learning (DL) technique provides us with a completely innovated way to generate solutions for some fluid dynamics problems in hours, or even in minutes. This is a multi-disciplinary field which has aroused a lot of interestes from the areas of Aerospace Engineering and Data Sciences.
+Traditional Computational Fluid Dynamics (CFD) methods are commonly computational expensive in solving a system of Partial Differential Equations (PDEs) on well refined meshes, especially for turbulent and high Reynolds number flows. Here some figures are shown using CFD to generate numerical solutions for some applications. Fortunately, the development of machine learning (ML) or deep learning (DL) technique provides us with a completely innovated way to generate solutions for some fluid dynamics problems in hours, or even in minutes. This is a multi-disciplinary field which has aroused a lot of interestes from the areas of Aerospace Engineering and Data Sciences.
+![image](Screenshots/LDC.png)
+![image](Screenshots/2Dstep.png)
 
 Having the capability of generating false data, the generative adversarial networks (GANs) have been regarded as one of the most promising deep learning methods. GANs is composed of two neural networks, one of which is generative neural network and the other is discriminative neural network so that the two neural networks can compete with each other to generate some false data which mimic the true data. When applying GANs to physical problems, there may be some serious issues. The first issue is that the generated data may not satisfy physical conservation laws or constraints due to its poor ability to extract complex physical features correctly. The second issue is that the training process may become more difficult and time-consuming after importing some physical constraints to the model.
 
@@ -30,7 +32,7 @@ Physical constraints can be usually denoted as H(X)<=0. To evaluate whether the 
 This term is integrated into the loss function of GANS through:
 ![image](Screenshots/Loss.png)
 
-where <greek>lambda</greek> is a tunning factor. 
+where $\lambda$ is a tunning factor. 
 
 # How to run the code
 You need to have a GPU to run the code to save time as this code can be slow on the GPU. If you are a VT student, you may need to apply for an allocation on the ARC system including NewRiver, CasCades and HuckleBerry. If you have allocation there already, then please follow the following steps.
