@@ -7,10 +7,12 @@ This is the GitHub repository for the CS5824 19Fall course project (Team6: Weich
 
 [3] Xie, You, et al. "tempogan: A temporally coherent, volumetric gan for super-resolution fluid flow." ACM Transactions on Graphics (TOG) 37.4 (2018): 95.
 
-# What have been reproduced in Ref [1]?
+# A summary of the paper [1]
+
+## What have been reproduced in Ref [1]?
 The paper can be summarized into 4 parts. the first part deals with the introduction and evolution of the GANs models. General GANs are introduced first, following by specific GANs and physcis-informed GANs. The main aim of the paper is to apply the physics-informed GANs model to simulate a simple potential flow (although this paper has a simpler test case to prove the GANs is working properly).
 
-# Background
+## Background
 Traditional Computational Fluid Dynamics (CFD) methods are commonly computational expensive in solving a system of Partial Differential Equations (PDEs) on well refined meshes, especially for turbulent and high Reynolds number flows. To generate the numerical solutions, we usually need to iteratively solve a system of nonlinear partial differential equations. Iteratively solving these equations on well refined meshes can be computationally expensive, therefore researchers in the CFD area have been thinking about new ways to generate numerical solutions with high accuracy faster. Here some figures are shown using CFD to generate numerical solutions for some applications. Fortunately, the development of machine learning (ML) or deep learning (DL) technique provides us with a completely innovated way to generate solutions for some fluid dynamics problems in hours, or even in minutes. This is a multi-disciplinary field which has aroused a lot of interestes from the areas of Aerospace Engineering and Data Sciences. As Aerospace Engineers, the ultimate goal is to solve CFD problems numerically using ML techniques such as physics-informed GANs, as they are computationally cheaper than the traditional CFD methods.
 
 ![image](Screenshots/LDC.png)
@@ -20,7 +22,7 @@ Having the capability of generating false data, the generative adversarial netwo
 
 Zeng's paper [1] is about using a physics-informed GANs model (PI-GANs) to simulate a family of potential flows (uniform flow + source flow). In PI-GANs, physical information such as the mass conservation law (for an incompressible flow) is integrated to GANs as a penalty term. This penalty term embedded to the generator to enforce the generated data inform the physical information. Although the flow itself studied in this project is elementary, the goal of this project is to see whether this PI-GANs can generate some “true” flows that mimic the real flows satisfying physical constraints, and it is a good start for future training on more complicated flows.
 
-# Theory
+## Theory
 Goodfellow et al. [2] firstly proposed GANs in 2014. The objective function of GANs used in their work was given as:
 
 ![image](Screenshots/GANs_formula.png)
