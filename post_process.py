@@ -8,13 +8,14 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # ------------------------------------------------------------------------- Global Variables
-DATA_FILE = ".\data\lr_0005__lambda_02.npz"
+DATA_FILE = ".\data\lr_0005_lambda_2.npz"
 
 # load the specified file
 data = np.load(DATA_FILE)
 train_hist = data['a'][()]
 
 # ------------------------------------------------------------------------- Divergence
+"""
 dr = train_hist['delta_real']
 dl = train_hist['delta_lose']
 
@@ -24,6 +25,7 @@ plt.yscale('log')
 plt.ylabel('mean divergence')
 plt.xlabel('epoch')
 plt.show()
+"""
 
 
 # ------------------------------------------------------------------------- Contours
