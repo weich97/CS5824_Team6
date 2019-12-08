@@ -116,9 +116,9 @@ python Serial_PIGANs_PF_dataset.py
 
 You may need to understand the code first so that you can make some modifications.
 
-# Results
+# Our Results
 
-# Conclusions
+# Our Conclusions
 
 # Some Important Notes
 The original source code can be found at git@github.com:zengyang7/Parallel-PIGANs.git. The source code may be used but requires citing:
