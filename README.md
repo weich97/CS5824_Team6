@@ -80,6 +80,9 @@ lr=0.0005, lambda=0.02  |  lr=0.00005, lambda=0.02  |  lr=0.0005, lambda=0.2  | 
 # How to Run the Code
 You need to have a GPU to run the code to save time as this code can be slow on the GPU. If you are a VT faculty/student, you may need to apply for an allocation on the ARC system including NewRiver, CasCades and HuckleBerry. If you have allocation there already, then please follow the steps below.
 
+## Python Packages Required
+Tensorflow, numpy, math, matplotlib, etc.
+
 ## Step 1
 Login to a cluster first. For example, if you want to acesss NewRiver, try
 
