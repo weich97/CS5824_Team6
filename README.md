@@ -6,8 +6,6 @@ principles of how GANs or specifically physics-informed GANs work.
 
 [1] Zeng, Yang, Jinlong Wu, and Heng Xiao. "Physics-Informed Generative Adversarial Networks by Incorporating Conservation Laws." Bulletin of the American Physical Society 63 (2018).
 
-![image](creation2_not_late.PNG)
-
 # How to run the code
 You need to have a GPU to run the code to save time as this code can be slow on the GPU. If you are a VT student, you may need to apply for an allocation on the ARC system including NewRiver, CasCades and HuckleBerry. If you have allocation there already, then please follow the following steps.
 
