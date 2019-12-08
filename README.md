@@ -24,6 +24,9 @@ Goodfellow et al. [2] firstly proposed GANs in 2014. The objective function of G
 
 where G and D are generator and discriminator, respectively, z the latent variables which are sampled from a given distribution p<sub>z</sub>(z) such as a uniform and Gaussian distribution, X the given training samples, p<sub>data</sub>(X) the distribution of these training samples.
 
+Physical constraints can be usually denoted as H(X)<=0. To evaluate whether the generated data of GANS satisfies some physical constraints, the term
+
+
 # How to run the code
 You need to have a GPU to run the code to save time as this code can be slow on the GPU. If you are a VT student, you may need to apply for an allocation on the ARC system including NewRiver, CasCades and HuckleBerry. If you have allocation there already, then please follow the following steps.
 
