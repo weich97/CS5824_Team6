@@ -13,6 +13,7 @@ The paper can be summarized into 4 parts. the first part deals with the introduc
 
 # Background
 Traditional Computational Fluid Dynamics (CFD) methods are commonly computational expensive in solving a system of Partial Differential Equations (PDEs) on well refined meshes, especially for turbulent and high Reynolds number flows. Here some figures are shown using CFD to generate numerical solutions for some applications. Fortunately, the development of machine learning (ML) or deep learning (DL) technique provides us with a completely innovated way to generate solutions for some fluid dynamics problems in hours, or even in minutes. This is a multi-disciplinary field which has aroused a lot of interestes from the areas of Aerospace Engineering and Data Sciences. As Aerospace Engineers, the ultimate goal is to solve CFD problems numerically using ML techniques such as physics-informed GANs, as they are computationally cheaper than the traditional CFD methods.
+
 ![image](Screenshots/LDC.png)
 ![image](Screenshots/2Dstep.png)
 
