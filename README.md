@@ -1,5 +1,5 @@
 # CS5824_Team6 (Title: Physics-informed GANs in Computational Fluid Dynamics)
-This is the GitHub repository for the CS5824 19Fall course project (Team6: Weicheng Xue and Richard Tan). The project is aimed to 1) reproduce the results in the paper titled "Physics-Informed Generative Adversarial Networks by Incorporating Conservation Laws" [1], 2) evaluate the  findings by running the code and comparing the results we get to the results in Ref [1], 3) get ourselves familiar with the principles of how GANs or specifically physics-informed GANs work.
+This is the GitHub repository for the CS5824 19Fall course project (Team6: Weicheng Xue and Richard Tan). The project is aimed to 1) reproduce the results in the paper titled "Physics-Informed Generative Adversarial Networks by Incorporating Conservation Laws" [1], 2) evaluate the findings by running the code and comparing the results we get to the results in Ref [1], 3) reinforce our study of the principles of how GANs [2] work or specifically how physics-informed GANs [2,3] can be applied in the Computational Fluid Dynamics (CFD) field.
 
 [1] Zeng, Yang, Jinlong Wu, and Heng Xiao. "Physics-Informed Generative Adversarial Networks by Incorporating Conservation Laws." Bulletin of the American Physical Society 63 (2018).
 
