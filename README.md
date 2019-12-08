@@ -73,13 +73,14 @@ We think a better way to compare whether the results are good or not is to compa
 ### Contours Plots
 
 ### Divergence Graphs
-lr=0.0005, lambda=0.02  |  lr=0.00005, lambda=0.02
-:-------------------------:|:-------------------------:
-<img src="results/lr_0005_lambda_02.PNG" width="200" height="200">  |  <img src="results/lr_00005_lambda_02.PNG" width="200" height="200">
+lr=0.0005, lambda=0.02     |  lr=0.00005, lambda=0.02  |  lr=0.0005, lambda=0.2 
+:-------------------------:|:-------------------------:|:-------------------------:
+<img src="results/lr_0005_lambda_02.PNG" width="200" height="200">  |  <img src="results/lr_00005_lambda_02.PNG" width="200" height="200">  |  <img src="results/lr_0005_lambda_2.PNG" width="200" height="200">
 
-lr=0.0005, lambda=0.2  |  with singularity
-:-------------------------:|:-------------------------:
-<img src="results/lr_0005_lambda_2.PNG" width="200" height="200">  |  <img src="results/singularity.PNG" width="200" height="200">
+
+Here is the divergence graph with the singularity present:
+
+<img src="results/singularity.PNG" width="200" height="200">
 
 # How to Run the Code
 You need to have a GPU to run the code to save time as this code can be slow on the GPU. If you are a VT faculty/student, you may need to apply for an allocation on the ARC system including NewRiver, CasCades and HuckleBerry. If you have allocation there already, then please follow the steps below.
