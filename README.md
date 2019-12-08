@@ -1,12 +1,11 @@
 # CS5824_Team6 (Title: Physics-informed GANs in Computational Fluid Dynamics)
-This is the GitHub repository for the CS5824 19Fall course project (Team6). The project is aimed to 1) reproduce the results in 
-the paper titled "Physics-Informed Generative Adversarial Networks by Incorporating Conservation Laws" [1], 2) evaluate the 
-findings by running the code and comparing the results we get to the results in Ref [1], 3) get ourselves familiar with the 
-principles of how GANs or specifically physics-informed GANs work.
+This is the GitHub repository for the CS5824 19Fall course project (Team6: Weicheng Xue and Richard Tan). The project is aimed to 1) reproduce the results in the paper titled "Physics-Informed Generative Adversarial Networks by Incorporating Conservation Laws" [1], 2) evaluate the  findings by running the code and comparing the results we get to the results in Ref [1], 3) get ourselves familiar with the principles of how GANs or specifically physics-informed GANs work.
 
 [1] Zeng, Yang, Jinlong Wu, and Heng Xiao. "Physics-Informed Generative Adversarial Networks by Incorporating Conservation Laws." Bulletin of the American Physical Society 63 (2018).
 
 [2] Goodfellow, Ian, et al. "Generative adversarial nets." Advances in neural information processing systems. 2014.
+
+[3] Xie, You, et al. "tempogan: A temporally coherent, volumetric gan for super-resolution fluid flow." ACM Transactions on Graphics (TOG) 37.4 (2018): 95.
 
 # What have been reproduced in Ref [1]?
 The paper can be summarized into 4 parts. the first part deals with the introduction and evolution of the GANs models. General GANs are introduced first, following by specific GANs and physcis-informed GANs. The main aim of the paper is to apply the physics-informed GANs model to simulate a simple potential flow (although this paper has a simpler test case to prove the GANs is working properly).
