@@ -10,6 +10,7 @@ import matplotlib.pyplot as plt
 # ------------------------------------------------------------------------- Global Variables
 DATA_DIR = ".\data"
 LABELS = ["lr=0.00005, lambda=0.02", "lr=0.0005, lambda=0.2", "lr=0.0005, lambda=0.02"]
+LABELS_SINGULARITY = ["removed 9.38% points around singularity", "removed 21.8% points around singularity"]
 
 # ------------------------------------------------------------------------- Divergence
 
@@ -27,12 +28,11 @@ for filename in os.listdir(DATA_DIR):
         plt.plot(range(len(dr)),dr)
 
 # show plot
-plt.legend(LABELS)
+plt.legend(LABELS_SINGULARITY)
 plt.yscale('log')
 plt.ylabel('mean divergence')
 plt.xlabel('epoch')
 plt.show()
-
 
 # ------------------------------------------------------------------------- Contours
 # x = train_hist['validate'][0] # (1,32,32,3)
