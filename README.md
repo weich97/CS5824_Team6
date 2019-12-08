@@ -6,15 +6,21 @@ principles of how GANs or specifically physics-informed GANs work.
 
 [1] Zeng, Yang, Jinlong Wu, and Heng Xiao. "Physics-Informed Generative Adversarial Networks by Incorporating Conservation Laws." Bulletin of the American Physical Society 63 (2018).
 
+[2] Goodfellow, Ian, et al. "Generative adversarial nets." Advances in neural information processing systems. 2014.
+
 # What have been reproduced in Ref [1]?
 The paper can be summarized into 4 parts. the first part deals with the introduction and evolution of the GANs models. General GANs are introduced first, following by specific GANs and physcis-informed GANs. The main aim of the paper is to apply the physics-informed GANs model to simulate a simple potential flow (although this paper has a simpler test case to prove the GANs is working properly).
 
-# Background and Theory
+# Background
 Traditional Computational Fluid Dynamics (CFD) methods are commonly computational expensive in solving a system of Partial Differential Equations (PDEs) on well refined meshes, especially for turbulent and high Reynolds number flows. Fortunately, the development of machine learning (ML) or deep learning (DL) technique provides us with a completely innovated way to generate solutions for some fluid dynamics problems in hours, or even in minutes. This is a multi-disciplinary field which has aroused a lot of interestes from the areas of Aerospace Engineering and Data Sciences.
 
 Having the capability of generating false data, the generative adversarial networks (GANs) have been regarded as one of the most promising deep learning methods. GANs is composed of two neural networks, one of which is generative neural network and the other is discriminative neural network so that the two neural networks can compete with each other to generate some false data which mimic the true data. When applying GANs to physical problems, there may be some serious issues. The first issue is that the generated data may not satisfy physical conservation laws or constraints due to its poor ability to extract complex physical features correctly. The second issue is that the training process may become more difficult and time-consuming after importing some physical constraints to the model.
 
 Zeng's paper [1] is about using a physics-informed GANs model (PI-GANs) to simulate a family of potential flows (uniform flow + source flow). In PI-GANs, physical information such as the mass conservation law (for an incompressible flow) is integrated to GANs as a penalty term. This penalty term embedded to the generator to enforce the generated data inform the physical information. Although the flow itself studied in this project is elementary, the goal of this project is to see whether this PI-GANs can generate some “true” flows that mimic the real flows satisfying physical constraints, and it is a good start for future training on more complicated flows.
+
+# Theory
+Goodfellow et al. [2] firstly proposed GANs in 2014. The objective function of GANs used in their work was given as:
+
 
 # How to run the code
 You need to have a GPU to run the code to save time as this code can be slow on the GPU. If you are a VT student, you may need to apply for an allocation on the ARC system including NewRiver, CasCades and HuckleBerry. If you have allocation there already, then please follow the following steps.
