@@ -9,7 +9,7 @@ This is the GitHub repository for the CS5824 19Fall course project (Team6: Weich
 
 # A summary of Ref [1]
 
-## What have been reproduced in Ref [1]?
+## What have been reproduced in this course project?
 The paper can be summarized into four sections logically. the first section deals with the theory and evolution of various GANs models. General GANs such as the first GANs model in Ref [2] are introduced first, followed by specific GANs including WGANs and physcis-informed GANs used in Ref[1]. Another paper [3] discussing the application of GANs into the CDF area is also referenced. The second section deals with a simple test case of generating circles with geometrical constraints. The application in this section is very simple, thus it is not a focus of our project. The third section deals with applying a physics-informed GANs model to simulate a simple potential flow, which is the most interested part to us. The code in Ref [1] can be found here: https://github.com/zengyang7/Parallel-PIGANs. We reproduced many results to the third section and also tried something not mentioned in Ref [1], such as removing less pixel points around the singularity of the potential flows. The last section is mainly about conclusions. We verified those conclusions but have a major doubt, that is, whether the physics-informed GANs can be applied for flows with discontinuity and large gradients, which are not mentioned in Ref [1].
 
 ## Background
