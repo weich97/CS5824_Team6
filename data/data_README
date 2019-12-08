@@ -1,0 +1,8 @@
+lr_0005__lambda_02: learning rate lr=0.005, and lambda=0.2 (please see Fig. 11 and Fig. 14 in Zeng's paper. lambda is a weighting factor for the physical constaint)
+lr_00005__lambda_02: learning rate lr=0.0005, and lambda=0.2
+lr_0005__lambda_2: learning rate lr=0.005, and lambda=2.0
+If_not_removing_the_singularity_point: There is a singularity in the potential flow problem. The author removed many points around the singularity (21.8% of the total pixel points) to avoid issues when training. However, how many points (what percentage) should be removed remains a question (this paper did not discuss this at all). Therefore, we tested on the effect. For this directory, we only removed 9.38% of the total pixel points. For problems having discontinuity (such as flows having shocks) or large gradients (such as boundary layer flows), we cannot neglect the singularity or something like that. 
+
+Note:
+1. Every running takes 200 epoches, if not specified
+2. The original code did not set the seed number to a specific value (it used the time as the seed number) so we can not reproduce the results there exactly, but just similarly
