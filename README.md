@@ -25,7 +25,7 @@ Goodfellow et al. [2] firstly proposed GANs in 2014. The objective function of G
 # How to run the code
 You need to have a GPU to run the code to save time as this code can be slow on the GPU. If you are a VT student, you may need to apply for an allocation on the ARC system including NewRiver, CasCades and HuckleBerry. If you have allocation there already, then please follow the following steps.
 
-# Step 1
+## Step 1
 Login to a cluster first. For example, if you want to acesss NewRiver, try
 
 ssh -X your_PID@newriver1.arc.vt.edu
@@ -38,7 +38,7 @@ For the Huckleberry, try
 
 ssh -X your_PID@huckleberry1.arc.vt.edu
 
-# Step 2
+## Step 2
 Then you need to apply a node with a certain number of CPU cores and GPUs for a period of time. On NewRiver, try
 
 qsub -I -lnodes=1:ppn=2:gpus=2 -q p100_normal_q -l walltime=04:00:00 -W group_list=newriver -A your_allocation_name
@@ -51,7 +51,7 @@ If you want to access HuckleBerry, then try
 
 salloc --time=04:00:00 -N 1 -n 8 --gres=gpu:2 --partition=normal_q --account=vt_aoe_dl
 
-# Step 3
+## Step 3
 Then you need to load some modules and activate the Anaconda environment on the nodes you applied. On NewRiver, try
 
 module load Anaconda/5.1.0
@@ -67,7 +67,7 @@ module load gcc cuda Anaconda3 jdk
 
 source activate powerai16_ibm
 
-# Step 4
+## Step 4
 Finally you can run the code. cd to the directory where you store the code, and try
 
 python Serial_PIGANs_PF_dataset.py
