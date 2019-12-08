@@ -130,7 +130,9 @@ You may need to understand the code first so that you can make some modification
 ## Contours Plots
 
 ## Divergence Graphs
-lr=0.0005, lambda=0.02     |  lr=0.00005, lambda=0.02  |  lr=0.0005, lambda=0.2 
+The following figure shows the effect of the learning rate and the turning factor lambda on the convergence rate. It can clearly seen that a higher learning rate (lr=0.005) is better as it converges much faster than using a lower learning rate (lr=0.0005), which is consistent with the results in Ref [1]. 
+
+lr=0.005, lambda=0.2     |  lr=0.0005, lambda=0.2  |  lr=0.005, lambda=2 
 :-------------------------:|:-------------------------:|:-------------------------:
 <img src="results/lr_0005_lambda_02.PNG" width="200" height="200">  |  <img src="results/lr_00005_lambda_02.PNG" width="200" height="200">  |  <img src="results/lr_0005_lambda_2.PNG" width="200" height="200">
 
