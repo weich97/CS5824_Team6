@@ -83,9 +83,9 @@ You may need to read the code first, as this code requires that you prepared the
 Just run using "python write_tfrecord.py". You can change the mesh size, but you should also change the network size and the convolution kernel size and the strides in the "Serial_PIGANs_PF_dataset.py" (you do not need to do so for 32x32 to 512x512 grids). This file also has a normalization so that the train data can be normalized.
 
 # Some important notes
-The source code can be found at git@github.com:zengyang7/Parallel-PIGANs.git. The source code may be used but requires citing:
+The original source code can be found at git@github.com:zengyang7/Parallel-PIGANs.git. The source code may be used but requires citing:
 
 [1] Zeng, Yang, Jinlong Wu, and Heng Xiao. "Physics-Informed Generative Adversarial Networks by Incorporating Conservation Laws." Bulletin of the American Physical Society 63 (2018).
 
 
-If there is any question about running the code, please email weich@vt.edu
+The code on this project is modified based on the code in Ref [1]. If there is any question about running the code in this repository, please email weich@vt.edu. Thanks!
