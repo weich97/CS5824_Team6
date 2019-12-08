@@ -4,22 +4,30 @@ Version:    2019.12.08
 """
 
 # ------------------------------------------------------------------------- Imports
-import numpy as np
+import numpy as np, os
 import matplotlib.pyplot as plt
 
 # ------------------------------------------------------------------------- Global Variables
-DATA_FILE = ".\data\If_not_removing_the_sigularity_point.npz"
-
-# load the specified file
-data = np.load(DATA_FILE)
-train_hist = data['a'][()]
+DATA_DIR = ".\data"
+LABELS = ["lr=0.00005, lambda=0.02", "lr=0.0005, lambda=0.2", "lr=0.0005, lambda=0.02"]
 
 # ------------------------------------------------------------------------- Divergence
-dr = train_hist['delta_real']
-dl = train_hist['delta_lose']
 
-# plot divergence
-plt.plot(range(len(dr)),dr,'r--',range(len(dl)),dl,'bs')
+for filename in os.listdir(DATA_DIR):
+    if filename.endswith(".npz"):
+        filepath = os.path.join(DATA_DIR, filename)
+        print("loading %s"%filename)
+
+        # load divergence
+        data = np.load(filepath)
+        train_hist = data['a'][()]
+        dr = train_hist['delta_real']
+
+        # plot divergence
+        plt.plot(range(len(dr)),dr)
+
+# show plot
+plt.legend(LABELS)
 plt.yscale('log')
 plt.ylabel('mean divergence')
 plt.xlabel('epoch')
