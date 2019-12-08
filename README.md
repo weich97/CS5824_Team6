@@ -103,7 +103,7 @@ The physical constraint used in this project is that the divergence of the veloc
 
 ![image](Screenshots/divergence.png)
 
-There are some parameters which need to be defined for the training samples. The parameters c, α and m are sampled from independent Gaussian distribution c~N(4, 0.4),α~N(0, π/4 ) and m~N(1, 0.2) to generate the velocity field and pressure field for 20000 samples. Cartesian grids with mesh sizes of 32x32, 64x64 and 128x128 are all generated for this project. Input samples are normalized and compressed into [-1, 1] for all inputs. 
+There are some parameters which need to be defined for the training samples. The parameters c, α and m are sampled from independent Gaussian distribution c~N(4, 0.4), α~N(0, π/4 ) and m~N(1, 0.2) to generate the velocity field and pressure field for 20000 samples. Cartesian grids with mesh sizes of 32x32, 64x64 and 128x128 are all generated for this project. Input samples are normalized and compressed into [-1, 1] for all inputs. 
 
 Just run using "python write_tfrecord.py". You can change the mesh size, but you should also change the network size and the convolution kernel size and the strides in the "Serial_PIGANs_PF_dataset.py" (you do not need to do so for 32x32 to 512x512 grids). This file also has a normalization so that the train data can be normalized.
 
