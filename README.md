@@ -48,6 +48,7 @@ module load cudnn/7.1
 If you are using Huckleberry, then try
 
 module load gcc cuda Anaconda3 jdk
+
 source activate powerai16_ibm
 
 # Step 4
