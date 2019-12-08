@@ -112,6 +112,10 @@ The configurations of the generator and discriminator used in Ref [1] can be fou
 
 ![image](Screenshots/Model_configuration.png)
 
+# Results
+
+# Conclusions
+
 # Some important notes
 The original source code can be found at git@github.com:zengyang7/Parallel-PIGANs.git. The source code may be used but requires citing:
 
