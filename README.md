@@ -6,6 +6,11 @@ principles of how GANs or specifically physics-informed GANs work.
 
 [1] Zeng, Yang, Jinlong Wu, and Heng Xiao. "Physics-Informed Generative Adversarial Networks by Incorporating Conservation Laws." Bulletin of the American Physical Society 63 (2018).
 
+# What have been reproduced in Ref [1]?
+The paper can be summarized into 4 parts. the first part deals with the introduction and evolution of the GANs models. General GANs are introduced first, following by specific GANs and physcis-informed GANs. The main aim of the paper is to apply the physics-informed GANs model to simulate a simple potential flow (although this paper has a simpler test case to prove the GANs is working properly).
+
+## test
+
 # How to run the code
 You need to have a GPU to run the code to save time as this code can be slow on the GPU. If you are a VT student, you may need to apply for an allocation on the ARC system including NewRiver, CasCades and HuckleBerry. If you have allocation there already, then please follow the following steps.
 
