@@ -132,9 +132,9 @@ You may need to understand the code first so that you can make some modification
 ## Divergence Graphs
 The following figure shows the effect of the learning rate and the turning factor lambda on the convergence rate. It can clearly seen that a higher learning rate (lr=0.005) is better as it converges much faster than using a lower learning rate (lr=0.0005), which is consistent with the results in Ref [1]. However, a larger lambda makes the training more unstable compared to using a smaller lambda. Higher lambda means the effect of constraint is stronger. We understand that the iterating would be more unstable in the initial transition stage, but we are unsure of why the iterating is still not very stable when the training is close to the convergence. This was also happend in Ref [1] but no explanation was made.  
 
-lr=0.005, lambda=0.2     |  lr=0.0005, lambda=0.2  |  lr=0.005, lambda=2 
-:-------------------------:|:-------------------------:|:-------------------------:
-<img src="results/lr_0005_lambda_02.PNG" width="200" height="200">  |  <img src="results/lr_00005_lambda_02.PNG" width="200" height="200">  |  <img src="results/lr_0005_lambda_2.PNG" width="200" height="200">
+Reproduced Results         |  Added Singularity
+:-------------------------:|:-------------------------:
+<img src="results/1st_div_graph.PNG">  |  <img src="results/singularity_div_graph.PNG">
 
 
 Here is the divergence graph with the singularity present:
