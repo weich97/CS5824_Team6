@@ -195,7 +195,7 @@ The following figures show the effect of the learning rate and the turning facto
 
 Also, if we remove more points near the singularity, then the case cannot be converged well. The final mean divergence is still higher than 100 and cannot be driven down further. This indicates that the physcis-informed GANs cannot be used to train problems with large gradients, which is consistent with what we found in the countour plots section. This is also not specified in Ref [1].
 
-Different lr and lambda  |  Removing different percentage of points near the singularity
+Different lr and lambda  |  Removing points near the singularity
 :-----------------------:|:-------------------------:
 <img src="results/1st_div_graph.PNG" width="250" height="200">  |  <img src="results/singularity_div_graph.PNG" width="250" height="200">
 
