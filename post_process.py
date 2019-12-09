@@ -46,8 +46,8 @@ def plot_contour(data):
         speed = np.sqrt(u*u + v*v)
 
         # plot data
-        plt.streamplot(x,y,u,v,density=2,color=p,linewidth=5*speed/speed.max())
-        plt.colorbar(p)
+        stream = plt.streamplot(x,y,u,v,density=2,color=p,linewidth=5*speed/speed.max())
+        plt.colorbar(stream.lines)
         plt.show()
 
 for filename in os.listdir(DATA_DIR):
