@@ -137,10 +137,6 @@ Reproduced Results         |  Added Singularity
 <img src="results/1st_div_graph.PNG">  |  <img src="results/singularity_div_graph.PNG">
 
 
-Here is the divergence graph with the singularity present:
-
-<img src="results/singularity.PNG" width="200" height="200">
-
 # Our Conclusions
 
 # Some Important Notes
