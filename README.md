@@ -134,7 +134,7 @@ The following figure shows the effect of the learning rate and the turning facto
 
 Reproduced Results         |  Added Singularity
 :-------------------------:|:-------------------------:
-<img src="results/1st_div_graph.PNG">  |  <img src="results/singularity_div_graph.PNG">
+<img src="results/1st_div_graph.PNG" width="250" height="200">  |  <img src="results/singularity_div_graph.PNG" width="250" height="200">
 
 
 # Our Conclusions
