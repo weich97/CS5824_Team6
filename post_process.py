@@ -37,6 +37,18 @@ plt.show()
 """
 
 # ------------------------------------------------------------------------- Contours
+def plot_contour(data):
+        x = np.linspace(-16,16,32)
+        y = np.linspace(-16,16,32)
+        u = data[0,:,:,0]
+        v = data[0,:,:,1]
+        p = data[0,:,:,2]
+        speed = np.sqrt(u*u + v*v)
+
+        # plot data
+        plt.streamplot(x,y,u,v,density=2,color=p,linewidth=5*speed/speed.max())
+        plt.colorbar(p)
+        plt.show()
 
 for filename in os.listdir(DATA_DIR):
     if filename.endswith(".npz"):
@@ -47,18 +59,10 @@ for filename in os.listdir(DATA_DIR):
         data = np.load(filepath)
         train_hist = data['a'][()]
 
-        # set up data
         training = train_hist['validate'][0]
-        x = np.linspace(-16,16,32)
-        y = np.linspace(-16,16,32)
-        u = training[0,:,:,0]
-        v = training[0,:,:,1]
-        speed = np.sqrt(u*u + v*v)
-
-        # plot data
-        plt.streamplot(x,y,u,v,color=speed)
-        plt.show()
-        
+        prediction = train_hist['validate'][1]
+        plot_contour(training)
+        plot_contour(prediction)
 
 # x = train_hist['validate'][0] # (1,32,32,3)
 """
