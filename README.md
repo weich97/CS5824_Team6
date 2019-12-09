@@ -12,7 +12,7 @@ Traditional Computational Fluid Dynamics (CFD) methods are commonly computationa
 
 A 3D LDC problem            |  A 2D supersonic inlet problem
 :--------------------------:|:-------------------------:
-<img src="Screenshots/LDC.png" width="400" height="400">  |  <img src="Screenshots/2Dstep.png" width="400" height="200">
+<img src="Screenshots/LDC.png" width="300" height="300">  |  <img src="Screenshots/2Dstep.png" width="300" height="200">
 
 Having the capability of generating false data, the generative adversarial networks (GANs) have been regarded as one of the most promising deep learning methods. GANs is composed of two neural networks, one of which is generative neural network and the other is discriminative neural network so that the two neural networks can compete with each other to generate some false data which mimic the true data. GANs seems promising but there may be some serious issues when applying GANs to physical problems. The first issue is that the generated data by GANs may not satisfy physical conservation laws or constraints due to its poor ability (maybe more related to the reliability as Aerospace Engineers may not trust the results from using GANs) to extract complex physical features correctly. The second issue is that the training process may become more difficult and time-consuming to converge after adding some physical constraints to the model.
 
