@@ -130,7 +130,7 @@ You may need to understand the code first so that you can make some modification
 ## Contours Plots
 
 ## Divergence Graphs
-The following figure shows the effect of the learning rate and the turning factor lambda on the convergence rate. It can clearly seen that a higher learning rate (lr=0.005) is better as it converges much faster than using a lower learning rate (lr=0.0005), which is consistent with the results in Ref [1]. 
+The following figure shows the effect of the learning rate and the turning factor lambda on the convergence rate. It can clearly seen that a higher learning rate (lr=0.005) is better as it converges much faster than using a lower learning rate (lr=0.0005), which is consistent with the results in Ref [1]. However, a larger lambda makes the training more unstable compared to using a smaller lambda. Higher lambda means the effect of constraint is stronger. We understand that the iterating would be more unstable in the initial transition stage, but we are unsure of why the iterating is still not very stable when the training is close to the convergence. This was also happend in Ref [1] but no explanation was made.  
 
 lr=0.005, lambda=0.2     |  lr=0.0005, lambda=0.2  |  lr=0.005, lambda=2 
 :-------------------------:|:-------------------------:|:-------------------------:
