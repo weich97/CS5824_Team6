@@ -197,7 +197,7 @@ Also, if we remove more points near the singularity, then the case cannot be con
 
 Different lr and lambda  |  Removing different percentage of points near the singularity
 :-----------------------:|:-------------------------:
-<img src="results/1st_div_graph.PNG">  |  <img src="results/singularity_div_graph.PNG">
+<img src="results/1st_div_graph.PNG" width="250" height="200">  |  <img src="results/singularity_div_graph.PNG" width="250" height="200">
 
 # Our Conclusions
 
