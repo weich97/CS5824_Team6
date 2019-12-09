@@ -136,6 +136,18 @@ You may need to understand the code first so that you can make some modification
 
 ## Contours Plots
 
+### Reproduced results for lr=0.005, lambda=0.2 (removed singularity):
+
+Training Sample            |  Prediction Sample
+:-------------------------:|:-------------------------:
+<img src="results/contours/normal_train.PNG" width="250" height="200">  |  <img src="results/contours/normal_predict.PNG" width="250" height="200">
+
+### Singularity present:
+
+Training Sample            |  Prediction Sample
+:-------------------------:|:-------------------------:
+<img src="results/contours/singularity_train.PNG" width="250" height="200">  |  <img src="results/contours/singularity_predict.PNG" width="250" height="200">
+
 ## Divergence History of the Velocity Field
 The following figure shows the effect of the learning rate and the turning factor lambda on the convergence rate. It can clearly seen that a higher learning rate (lr=0.005) is better as it converges much faster than using a lower learning rate (lr=0.0005), which is consistent with the results in Ref [1]. However, a larger lambda makes the training more unstable compared to using a smaller lambda. Higher lambda means the effect of constraint is stronger. We understand that the iterating would be more unstable in the initial transition stage, but we are unsure of why the iterating is still not very stable when the training is close to the convergence. This was also happend in Ref [1] and explained in a way that the two terms in the loss function should be balanced to get a better convergence, even if the convergence is close to the tolerance. Our reproduced results here are very similar to the results in Ref [1]. 
 
