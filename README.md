@@ -136,7 +136,6 @@ Different lr and lambda  |  Removing different percentage of points near the sin
 :-----------------------:|:-------------------------:
 <img src="results/1st_div_graph.PNG">  |  <img src="results/singularity_div_graph.PNG">
 
-
 # Our Conclusions
 
 # Some Important Notes
